@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CL-car-sharing-jj.iml" filepath="$PROJECT_DIR$/.idea/CL-car-sharing-jj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ONL_FER_S_09_Zaawansowany_HTML_i_CSS/.idea/ONL_FER_S_09_Zaawansowany_HTML_i_CSS.iml" filepath="$PROJECT_DIR$/../ONL_FER_S_09_Zaawansowany_HTML_i_CSS/.idea/ONL_FER_S_09_Zaawansowany_HTML_i_CSS.iml" />
     </modules>
   </component>
 </project>
