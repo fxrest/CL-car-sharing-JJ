@@ -1,8 +1,73 @@
 :root{
 
+    /*colors*/
+    --color-base-white: #ffffff;
+    --color-base-black: #000000;
+    --nav-base-color: #00000066;
+    --nav-active-color: #FFFFFF33;
+    --color-base-red: #FF0000;
+    --banner-text-shadow: #00000040;
+    --red-element-shadow: #FF00004D;
+    --white-element-shadow: #FF00004D;
+    --blog-article-text-color: #6A6A6A;
+    --background-dark-color: #28272C;
+    --service-article-text-color: #B2B2B2;
+    --contact-text-color: #B2B2B2;
+    --contact-box-color: #D1D1D1;
+
+    /*fonts*/
+    --font-primary: 'Nunito Sans', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+
 }
 
 *{
     box-sizing: border-box;
 }
 
+.banner-section{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/Image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+}
+
+.container{
+    width: 1088px;
+}
+
+.nav-section{
+    width: 100%;
+    display: flex;
+    background-color: var(--nav-base-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    margin: 20px;
+}
+
+.logo p{
+    color: var(--color-base-red);
+    font-family: var(--font-primary);
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    padding: 10px;
+}
+
+.logo span{
+    color: var(--color-base-white);
+}
+
+.logo img{
+    width: 100%;
+}
