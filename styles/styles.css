@@ -26,6 +26,7 @@
 *{
     box-sizing: border-box;
     z-index: 1;
+    text-decoration: none;
 }
 
 body{
@@ -121,12 +122,12 @@ header{
 
 .list-text a{
     padding: 40px;
-    text-decoration: none;
     color: var(--color-base-white);
 }
 
 .list-text a:hover{
     background-color: var(--nav-active-color);
+    transition: 200ms;
 }
 
 .banner-section, .banner-content{
@@ -149,7 +150,7 @@ h1{
     color: var(--color-base-white);
     text-align: center;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 600;
     padding: 21px;
     margin-bottom: 5px;
 }
@@ -158,10 +159,6 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.banner-buttons a{
-    text-decoration: none;
 }
 
 .btn-huge{
@@ -206,7 +203,8 @@ main{
     width: 100vw;
 }
 
-.blog-section, .service-section, .contact-section{
+.blog-section, .service-section,
+.contact-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,20 +214,33 @@ main{
     font-size: 3.5rem;
     font-weight: 400;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-title::before{
     content: "";
     background-color: var(--color-base-red);
-    padding: 1px 50px;
+    display: block;
+    width: 50px;
+    height: 3px;
+    flex-grow: 1;
     box-shadow: 2px 2px 5px var(--red-element-shadow);
+    margin-right: 10px;
+    border-radius: 50px;
 }
 
 .section-title::after{
     content: "";
     background-color: var(--color-base-red);
-    padding: 3px 50px;
+    display: block;
+    width: 50px;
+    height: 3px;
+    flex-grow: 1;
     box-shadow: 2px 2px 5px var(--red-element-shadow);
+    margin-left: 10px;
+    border-radius: 50px;
 }
 
 /*sections*/
@@ -238,17 +249,22 @@ main{
     background-color: var(--background-dark-color);
 }
 
-.blog-section-holder, .service-section-holder{
+.blog-section-holder,
+.service-section-holder{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.blog-article-holder, .service-article-holder{
+.service-section-holder{
+    margin-top: 100px;
+}
+
+.blog-article-holder,
+.service-article-holder{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -283,7 +299,7 @@ main{
 }
 
 .article-text{
-    max-width: 75%;
+    /*max-width: 75%;*/
     font-family: var(--font-secondary);
     font-size: 1.4rem;
     font-weight: 300;
@@ -291,12 +307,18 @@ main{
     padding: 1px;
 }
 
+.blog-article .article-text{
+    max-width: 80%;
+}
+
 .service-article-title{
     text-align: center;
 }
 
-.service-article .article-text{
+.service-article .article-text,
+.service-article-title, .service-section-title{
     text-align: center;
+    color: var(--color-base-white)
 }
 
 .btn{
@@ -315,6 +337,42 @@ main{
     box-shadow: 2px 2px 5px var(--red-element-shadow);
 }
 
-.btn a{
-    text-decoration: none;
+/*footer*/
+footer{
+    width: 100vw;
+    max-height: 230px;
+    background-color: var(--background-dark-color);
+    display: flex;
+    position: relative;
+}
+
+.footer-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    width: 100%;
+
+}
+
+.footer-logo img{
+    width: 100%;
+    padding: 10px;
+}
+
+.nav-footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.nav-footer a{
+    color: var(--color-base-white);
+    font-size: 1.4rem;
+}
+
+.nav-footer a:hover{
+    color: var(--color-base-red);
+    transition: 200ms;
 }
