@@ -250,7 +250,8 @@ main{
 }
 
 .blog-section-holder,
-.service-section-holder{
+.service-section-holder,
+.contact-section-holder{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -259,7 +260,7 @@ main{
     margin-bottom: 100px;
 }
 
-.service-section-holder{
+.service-section-holder {
     margin-top: 100px;
 }
 
@@ -299,7 +300,6 @@ main{
 }
 
 .article-text{
-    /*max-width: 75%;*/
     font-family: var(--font-secondary);
     font-size: 1.4rem;
     font-weight: 300;
@@ -316,7 +316,8 @@ main{
 }
 
 .service-article .article-text,
-.service-article-title, .service-section-title{
+.service-article-title,
+.service-section-title{
     text-align: center;
     color: var(--color-base-white)
 }
@@ -337,6 +338,30 @@ main{
     box-shadow: 2px 2px 5px var(--red-element-shadow);
 }
 
+/*contact-section and form*/
+
+.contact-section{
+    margin-top: 100px;
+}
+
+input[type="text"],
+textarea {
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 4px hsla(0, 0%, 15%, 0.59);
+    width: 100%;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+input[type="text"]:focus, textarea:focus{
+    border: 1px solid red;
+}
+
 /*footer*/
 footer{
     width: 100vw;
@@ -352,7 +377,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /*max-width: 100%;*/
     width: 100%;
 
 }
@@ -384,7 +408,6 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
-    /*align-items: center;*/
 }
 
 .nav-footer a{
@@ -398,10 +421,10 @@ footer{
     font-size: 1.2rem;
     color: #D1D1D1;
     line-height: 25px;
+    text-transform: capitalize;
 }
 
 .nav-footer a:hover{
     color: var(--color-base-red);
     transition: 200ms;
 }
-
