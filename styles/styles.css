@@ -162,7 +162,7 @@ h1{
 }
 
 .btn-huge{
-    padding: 25px 80px;
+    padding: 25px 55px;
     font-size: 1.6rem;
     font-weight: 700;
     border-radius: 50px;
@@ -212,7 +212,7 @@ main{
 
 .section-title{
     font-size: 3.5rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
@@ -323,7 +323,7 @@ main{
 }
 
 .btn{
-    padding: 10px 50px;
+    padding: 12px 51px;
     font-size: 1.4rem;
     font-weight: 600;
     border-radius: 50px;
@@ -336,6 +336,7 @@ main{
     background-color: var(--color-base-red);
     color: var(--color-base-white);
     box-shadow: 2px 2px 5px var(--red-element-shadow);
+    padding: 13px 30px;
 }
 
 /*contact-section and form*/
@@ -344,22 +345,55 @@ main{
     margin-top: 100px;
 }
 
+.contact-section-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-section-content img{
+    padding: 20px;
+    /*width: 67%;*/
+}
+
+.contact-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 20px;
+}
+
 input[type="text"],
 textarea {
-    padding: 15px;
     box-sizing: border-box;
-    border-radius: 3px;
     border: 1px solid #ccc;
-    box-shadow: inset 0 1px 4px hsla(0, 0%, 15%, 0.59);
+    border-radius: 10px;
     width: 100%;
+    font-family: var(--font-primary);
+    font-size: 1.6em;
+    padding: 16px;
+    margin-bottom: 20px;
+    color: var(--contact-text-color);
 }
 
 textarea {
-    min-height: 150px;
+    height: 140px;
+    resize: none;
+}
+
+.btn-white{
+    background-color: var(--color-base-white);
+    color: var(--color-base-red);
+    border: 1px solid var(--color-base-red);
+    box-shadow: 1px 1px 5px var(--color-base-red);
+    align-self: flex-end;
 }
 
 input[type="text"]:focus, textarea:focus{
-    border: 1px solid red;
+    border: 2px solid red;
+    box-shadow: inset 0px 2px 5px var(--red-element-shadow);
 }
 
 /*footer*/
