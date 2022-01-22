@@ -354,7 +354,8 @@ main{
 
 .contact-section-content img{
     padding: 20px;
-    /*width: 67%;*/
+    width: 100%;
+    height: 100%;
 }
 
 .contact-form{
@@ -374,7 +375,7 @@ textarea {
     font-family: var(--font-primary);
     font-size: 1.6em;
     padding: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     color: var(--contact-text-color);
 }
 
@@ -389,6 +390,34 @@ textarea {
     border: 1px solid var(--color-base-red);
     box-shadow: 1px 1px 5px var(--color-base-red);
     align-self: flex-end;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox{
+    cursor: pointer;
+    display: flex;
+    color: var(--contact-text-color);
+    margin-bottom: 24px;
+}
+
+.checkbox span{
+    height: 22px;
+    flex: 1 0 22px;
+    border: 1px solid var(--contact-box-color);
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.checkbox:checked{
+    content: "";
+    background-image: url("../images/Icon Check.svg");
 }
 
 input[type="text"]:focus, textarea:focus{
