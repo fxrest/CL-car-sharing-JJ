@@ -405,6 +405,7 @@ textarea {
     display: flex;
     color: var(--contact-text-color);
     margin-bottom: 24px;
+    text-transform: none;
 }
 
 .checkbox span{
@@ -415,15 +416,18 @@ textarea {
     margin-right: 10px;
 }
 
-.checkbox:checked{
-    content: "";
+label.checkbox input.checkbox1:checked ~ span {
     background-image: url("../images/Icon Check.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 input[type="text"]:focus, textarea:focus{
     border: 2px solid red;
     box-shadow: inset 0px 2px 5px var(--red-element-shadow);
 }
+
 
 /*footer*/
 footer{
